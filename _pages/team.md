@@ -1,3 +1,9 @@
+---
+layout: archive
+title: "Team"
+permalink: /people/
+author_profile: false
+---
 # Team
 
 ## Principal Investigator
