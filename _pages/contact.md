@@ -9,22 +9,23 @@ author_profile: false
 
 ## Dr Bipin Pandey
 
-RhizoSensing
+RhizoSensing Lab
 
 School of Biosciences
 
 University of Nottingham
 
 Nottingham, United Kingdom
+LE12 5RD
 
 Email: bipin.pandey@nottingham.ac.uk
 
 ## Research Areas
 
-- Root biology
+- Root soil mechanobiology
 - Soil compaction
 - Rhizosphere biology
-- Plant stress responses
+- Plant soil stress responses
 - Root sensing technologies
 
 ## Collaborations
