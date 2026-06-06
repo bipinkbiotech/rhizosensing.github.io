@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Bipin2.JPG"
+  avatar           : "Bipin2.JPEG"
   name             : "Dr Bipin Pandey"
   pronouns         : # example: "He/him"  
   bio              : "Plant biologist investigating root-soil interactions, soil compaction, rhizosphere biology, and sensing mechanism for sustainable agriculture."
