@@ -1,3 +1,9 @@
+---
+layout: archive
+title: "Research"
+permalink: /about/
+author_profile: true
+---
 # Research
 
 ## Research Vision
