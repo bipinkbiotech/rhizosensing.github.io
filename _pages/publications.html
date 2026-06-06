@@ -5,10 +5,22 @@ permalink: /publications/
 author_profile: true
 ---
 
-<h2>Publications Test</h2>
+{% if site.author.googlescholar %}
+<div class="wordwrap">
+You can also find my publications on
+<a href="{{site.author.googlescholar}}">Google Scholar</a>.
+</div>
+{% endif %}
 
-{% for post in site.publications %}
-  <p>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </p>
+<h2>Selected Publications</h2>
+
+<ul>
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% for post in pubs %}
+  <li>
+    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+    <em>{{ post.venue }}</em> ({{ post.date | date: "%Y" }})
+  </li>
+  <br>
 {% endfor %}
+</ul>
