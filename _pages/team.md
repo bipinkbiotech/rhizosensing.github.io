@@ -1,10 +1,9 @@
-_pages/contact.md---
-
+---
 layout: archive
 title: "Contact"
 permalink: /contact/
 author_profile: false
----------------------
+---
 
 # Contact
 
@@ -16,7 +15,7 @@ University of Nottingham
 
 United Kingdom
 
-Email: [contact@rhizosensing.org](mailto:contact@rhizosensing.org)
+Email: contact@rhizosensing.org
 
 ## Collaborations
 
