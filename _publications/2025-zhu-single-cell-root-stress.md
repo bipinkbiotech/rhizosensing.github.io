@@ -5,7 +5,7 @@ collection: publications
 permalink: /publication/single-cell-root-stress-2025
 date: 2025-01-01
 venue: "Nature"
-paperurl: "https://doi.org/10.1038/s41586-025-09095-7"
+paperurl: "https://doi.org/10.1038/s41586-025-08941-z"
 citation: "Zhu M, Hsu CW, Peralta Ogorek LL, Taylor IW, La Cavera S, Oliveira DM, et al. (2025). Single-cell transcriptomics reveal how root tissues adapt to soil stress. Nature 642(8068):721–729."
 ---
 
