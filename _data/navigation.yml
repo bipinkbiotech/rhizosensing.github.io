@@ -15,7 +15,7 @@ main:
     url: /about/   
 
   - title: "Team"
-    url: /team/   
+    url: /people/   
     
   - title: "Publications"
     url: /publications/
