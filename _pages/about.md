@@ -1,15 +1,12 @@
 ---
-
 permalink: /
 title: "RhizoSensing"
 author_profile: true
---------------------
+---
 
 # Welcome to RhizoSensing
 
 RhizoSensing is a research initiative focused on understanding how plant roots interact with soil environments under both optimal and stress conditions.
-
-Our research combines plant physiology, root biology, rhizosphere ecology, molecular biology, and advanced sensing technologies to improve crop resilience and agricultural sustainability.
 
 ## Research Areas
 
