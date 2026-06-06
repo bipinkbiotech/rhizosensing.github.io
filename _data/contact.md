@@ -18,7 +18,7 @@ University of Nottingham
 
 Nottingham, United Kingdom
 
-Email: [bipin@rhizosensing.org](mailto:bipin@rhizosensing.org)
+Email: [bipin.pandey@nottingham.ac.uk](mailto:bipin.pandey@nottingham.ac.uk)
 
 ## Research Areas
 
