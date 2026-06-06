@@ -1,22 +1,24 @@
 ---
 layout: archive
-title: "Contact"
-permalink: /contact/
+title: "Team"
+permalink: /team/
 author_profile: false
 ---
 
-# Contact
+# Team
 
-## Dr Bipin Pandey
+## Principal Investigator
 
-RhizoSensing
+### Dr Bipin Pandey
+
+Plant biologist investigating root-soil interactions, soil compaction, rhizosphere biology, and sensing mechanisms for sustainable agriculture.
 
 University of Nottingham
 
-United Kingdom
+## Current Members
 
-Email: contact@rhizosensing.org
+Coming soon.
 
-## Collaborations
+## Alumni
 
-We welcome enquiries regarding collaborative research, student opportunities, and industry partnerships related to root biology, rhizosphere interactions, soil compaction, and agricultural sensing technologies.
+Coming soon.
