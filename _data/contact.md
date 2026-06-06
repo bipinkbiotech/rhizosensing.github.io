@@ -1,10 +1,9 @@
 ---
-
 layout: archive
 title: "Contact"
 permalink: /contact/
 author_profile: false
----------------------
+---
 
 # Contact
 
@@ -18,15 +17,15 @@ University of Nottingham
 
 Nottingham, United Kingdom
 
-Email: [bipin.pandey@nottingham.ac.uk](mailto:bipin.pandey@nottingham.ac.uk)
+Email: bipin.pandey@nottingham.ac.uk
 
 ## Research Areas
 
-* Root biology
-* Soil compaction
-* Rhizosphere biology
-* Plant stress responses
-* Root sensing technologies
+- Root biology
+- Soil compaction
+- Rhizosphere biology
+- Plant stress responses
+- Root sensing technologies
 
 ## Collaborations
 
