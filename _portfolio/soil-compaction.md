@@ -21,3 +21,5 @@ Soil compaction is one of the major constraints to crop productivity worldwide. 
 * Huang et al. (2022) PNAS
 * Zhang et al. (2026) Nature
 * Zhu et al. (2025) Nature
+* Ogorek et al. (2025) TIPS
+* Pandey et al. (2024) JexBot
