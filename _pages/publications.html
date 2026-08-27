@@ -40,9 +40,15 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <div style="margin-bottom: 0.7em;">
+{% assign short_authors = site.data.publication_authors[post.slug] %}
+
+<div style="margin-bottom: 0.7em;">
+  {% if short_authors %}
+    {{ short_authors }}
+  {% else %}
     {{ post.citation | markdownify }}
-  </div>
+  {% endif %}
+</div>
 
   <p style="margin-top: 0;">
     {% if post.paperurl %}
@@ -80,9 +86,15 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <div style="margin-bottom: 0.7em;">
+{% assign short_authors = site.data.publication_authors[post.slug] %}
+
+<div style="margin-bottom: 0.7em;">
+  {% if short_authors %}
+    {{ short_authors }}
+  {% else %}
     {{ post.citation | markdownify }}
-  </div>
+  {% endif %}
+</div>
 
   <p style="margin-top: 0;">
     {% if post.paperurl %}
@@ -120,9 +132,15 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <div style="margin-bottom: 0.7em;">
+{% assign short_authors = site.data.publication_authors[post.slug] %}
+
+<div style="margin-bottom: 0.7em;">
+  {% if short_authors %}
+    {{ short_authors }}
+  {% else %}
     {{ post.citation | markdownify }}
-  </div>
+  {% endif %}
+</div>
 
   <p style="margin-top: 0;">
     {% if post.paperurl %}
@@ -160,9 +178,15 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <div style="margin-bottom: 0.7em;">
+{% assign short_authors = site.data.publication_authors[post.slug] %}
+
+<div style="margin-bottom: 0.7em;">
+  {% if short_authors %}
+    {{ short_authors }}
+  {% else %}
     {{ post.citation | markdownify }}
-  </div>
+  {% endif %}
+</div>
 
   <p style="margin-top: 0;">
     {% if post.paperurl %}
