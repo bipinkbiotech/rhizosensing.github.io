@@ -54,24 +54,24 @@
         {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
 
-    {% elsif post.collection == 'publications' %}
+{% elsif post.collection == 'publications' %}
 
-      {% assign short_authors = site.data.publication_authors[post.slug] %}
+  {% assign short_authors = site.data.publication_authors[post.slug] %}
 
-      <p>
-        <i>{{ post.venue }}</i> ·
-        {{ post.date | default: "1900-01-01" | date: "%Y" }}
-      </p>
+  <p>
+    <i>{{ post.venue }}</i> ·
+    {{ post.date | default: "1900-01-01" | date: "%Y" }}
+  </p>
 
-      {% if short_authors %}
-        <p class="publication-authors">
-          {{ short_authors }}
-        </p>
-      {% elsif post.citation %}
-        <p class="publication-authors">
-          {{ post.citation }}
-        </p>
-      {% endif %}
+  {% if short_authors %}
+    <p class="publication-authors">
+      {{ short_authors }}
+    </p>
+  {% elsif post.citation %}
+    <p class="publication-authors">
+      {{ post.citation }}
+    </p>
+  {% endif %}
 
       <p class="publication-links">
 
