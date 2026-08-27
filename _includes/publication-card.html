@@ -1,0 +1,20 @@
+{% include base_path %}
+<div class="publication-card">
+  <h2 class="archive__item-title">
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
+  <div class="publication-venue">
+    <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
+  </div>
+  {% if post.citation %}
+    <div class="publication-citation">{{ post.citation }}</div>
+  {% endif %}
+  <div class="publication-links">
+    {% if post.doi %}
+      <a class="publication-button" href="{{ post.doi }}" target="_blank" rel="noopener">DOI</a>
+    {% endif %}
+    {% if post.scholarurl %}
+      <a class="publication-button" href="{{ post.scholarurl }}" target="_blank" rel="noopener">Google Scholar</a>
+    {% endif %}
+  </div>
+</div>
