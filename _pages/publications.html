@@ -19,133 +19,186 @@ author_profile: true
   </p>
 </div>
 
+
+<!-- ========================= -->
+<!-- Research Articles -->
+<!-- ========================= -->
+
 <h2>Research Articles</h2>
 
 {% assign pubs = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
 
 {% for post in pubs %}
-<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
 
-  <h3 style="margin-bottom: 0.3em;">
-    <a href="{{ post.url }}">{{ post.title }}</a>
+<div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">
+        {{ post.title }}
+      </a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
   </h3>
 
-  <div>
+  <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p>
+  <p style="margin-bottom: 0.5em;">
     {{ post.citation }}
   </p>
 
   <p>
-    {% if post.doi %}
-      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
 
-    {% if post.scholarurl %}
-      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
-    {% endif %}
+    <a href="https://scholar.google.com/scholar?q=%22{{ post.title | uri_escape }}%22"
+       target="_blank">
+      [Google Scholar]
+    </a>
   </p>
 
 </div>
+
 {% endfor %}
 
 
-<h2>Reviews & Perspectives</h2>
+<!-- ========================= -->
+<!-- Reviews & Perspectives -->
+<!-- ========================= -->
+
+<h2>Reviews &amp; Perspectives</h2>
 
 {% assign pubs = site.publications | where: "category", "reviews" | sort: "date" | reverse %}
 
 {% for post in pubs %}
-<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
 
-  <h3 style="margin-bottom: 0.3em;">
-    <a href="{{ post.url }}">{{ post.title }}</a>
+<div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">
+        {{ post.title }}
+      </a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
   </h3>
 
-  <div>
+  <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p>
+  <p style="margin-bottom: 0.5em;">
     {{ post.citation }}
   </p>
 
   <p>
-    {% if post.doi %}
-      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
 
-    {% if post.scholarurl %}
-      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
-    {% endif %}
+    <a href="https://scholar.google.com/scholar?q=%22{{ post.title | uri_escape }}%22"
+       target="_blank">
+      [Google Scholar]
+    </a>
   </p>
 
 </div>
+
 {% endfor %}
 
 
-<h2>Preprints</h2>
+<!-- ========================= -->
+<!-- Books & Book Chapters -->
+<!-- ========================= -->
 
-{% assign pubs = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
+<h2>Book Chapters / Books</h2>
+
+{% assign pubs = site.publications | where: "category", "books" | sort: "date" | reverse %}
 
 {% for post in pubs %}
-<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
 
-  <h3 style="margin-bottom: 0.3em;">
-    <a href="{{ post.url }}">{{ post.title }}</a>
+<div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">
+        {{ post.title }}
+      </a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
   </h3>
 
-  <div>
+  <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p>
+  <p style="margin-bottom: 0.5em;">
     {{ post.citation }}
   </p>
 
   <p>
-    {% if post.doi %}
-      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
 
-    {% if post.scholarurl %}
-      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
-    {% endif %}
+    <a href="https://scholar.google.com/scholar?q=%22{{ post.title | uri_escape }}%22"
+       target="_blank">
+      [Google Scholar]
+    </a>
   </p>
 
 </div>
+
 {% endfor %}
 
+
+<!-- ========================= -->
+<!-- Conference Papers -->
+<!-- ========================= -->
 
 <h2>Conference Papers</h2>
 
 {% assign pubs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
 
 {% for post in pubs %}
-<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
 
-  <h3 style="margin-bottom: 0.3em;">
-    <a href="{{ post.url }}">{{ post.title }}</a>
+<div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">
+        {{ post.title }}
+      </a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
   </h3>
 
-  <div>
+  <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p>
+  <p style="margin-bottom: 0.5em;">
     {{ post.citation }}
   </p>
 
   <p>
-    {% if post.doi %}
-      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
 
-    {% if post.scholarurl %}
-      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
-    {% endif %}
+    <a href="https://scholar.google.com/scholar?q=%22{{ post.title | uri_escape }}%22"
+       target="_blank">
+      [Google Scholar]
+    </a>
   </p>
 
 </div>
+
 {% endfor %}
