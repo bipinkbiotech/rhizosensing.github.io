@@ -1,6 +1,7 @@
 {% include base_path %}
 
-{% assign short_authors = site.data.publication_authors[post.slug] %}
+{% assign publication_key = post.permalink | split: "/" | last %}
+{% assign short_authors = site.data.publication_authors[publication_key] %}
 {% assign doi_url = post.paperurl | default: post.doi %}
 
 <div class="publication-card">
@@ -25,12 +26,16 @@
 
   <div class="publication-links">
     {% if doi_url %}
-      <a class="publication-button" href="{{ doi_url }}" target="_blank" rel="noopener">DOI</a>
+      <a class="publication-button"
+         href="{{ doi_url }}"
+         target="_blank"
+         rel="noopener">DOI</a>
     {% endif %}
 
     <a class="publication-button"
        href="https://scholar.google.com/scholar?q=%22{{ post.title | uri_escape }}%22"
-       target="_blank" rel="noopener">Google Scholar</a>
+       target="_blank"
+       rel="noopener">Google Scholar</a>
   </div>
 
 </div>
