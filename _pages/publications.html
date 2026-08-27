@@ -5,22 +5,147 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
 <div class="wordwrap">
-You can also find my publications on
-<a href="{{site.author.googlescholar}}">Google Scholar</a>.
+  <p>
+    Our research explores root–soil interactions, root architecture,
+    soil sensing and plant adaptation to soil physical and chemical stresses.
+  </p>
+
+  <p>
+    <a href="https://scholar.google.com/citations?user=FxWuN48AAAAJ&hl=en"
+       target="_blank">
+      <strong>View our publications on Google Scholar →</strong>
+    </a>
+  </p>
 </div>
-{% endif %}
 
-<h2>Selected Publications</h2>
+<h2>Research Articles</h2>
 
-<ul>
-{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% assign pubs = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
+
 {% for post in pubs %}
-  <li>
-    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
-    <em>{{ post.venue }}</em> ({{ post.date | date: "%Y" }})
-  </li>
-  <br>
+<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.3em;">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  <div>
+    <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
+  </div>
+
+  <p>
+    {{ post.citation }}
+  </p>
+
+  <p>
+    {% if post.doi %}
+      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% endif %}
+
+    {% if post.scholarurl %}
+      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
+    {% endif %}
+  </p>
+
+</div>
 {% endfor %}
-</ul>
+
+
+<h2>Reviews & Perspectives</h2>
+
+{% assign pubs = site.publications | where: "category", "reviews" | sort: "date" | reverse %}
+
+{% for post in pubs %}
+<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.3em;">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  <div>
+    <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
+  </div>
+
+  <p>
+    {{ post.citation }}
+  </p>
+
+  <p>
+    {% if post.doi %}
+      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% endif %}
+
+    {% if post.scholarurl %}
+      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
+    {% endif %}
+  </p>
+
+</div>
+{% endfor %}
+
+
+<h2>Preprints</h2>
+
+{% assign pubs = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
+
+{% for post in pubs %}
+<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.3em;">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  <div>
+    <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
+  </div>
+
+  <p>
+    {{ post.citation }}
+  </p>
+
+  <p>
+    {% if post.doi %}
+      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% endif %}
+
+    {% if post.scholarurl %}
+      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
+    {% endif %}
+  </p>
+
+</div>
+{% endfor %}
+
+
+<h2>Conference Papers</h2>
+
+{% assign pubs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
+
+{% for post in pubs %}
+<div style="margin-bottom: 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd;">
+
+  <h3 style="margin-bottom: 0.3em;">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  <div>
+    <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
+  </div>
+
+  <p>
+    {{ post.citation }}
+  </p>
+
+  <p>
+    {% if post.doi %}
+      <a href="{{ post.doi }}" target="_blank">[DOI]</a>
+    {% endif %}
+
+    {% if post.scholarurl %}
+      <a href="{{ post.scholarurl }}" target="_blank">[Google Scholar]</a>
+    {% endif %}
+  </p>
+
+</div>
+{% endfor %}
