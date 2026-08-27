@@ -46,9 +46,9 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p style="margin-bottom: 0.5em;">
-    {{ post.citation }}
-  </p>
+  <div style="margin-bottom: 0.5em;">
+  {{ post.citation | markdownify }}
+</div>
 
   <p>
     {% if post.paperurl %}
@@ -92,9 +92,9 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p style="margin-bottom: 0.5em;">
-    {{ post.citation }}
-  </p>
+ <div style="margin-bottom: 0.5em;">
+  {{ post.citation | markdownify }}
+</div>
 
   <p>
     {% if post.paperurl %}
@@ -138,9 +138,9 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p style="margin-bottom: 0.5em;">
-    {{ post.citation }}
-  </p>
+ <div style="margin-bottom: 0.5em;">
+  {{ post.citation | markdownify }}
+</div>
 
   <p>
     {% if post.paperurl %}
@@ -184,9 +184,9 @@ author_profile: true
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <p style="margin-bottom: 0.5em;">
-    {{ post.citation }}
-  </p>
+<div style="margin-bottom: 0.5em;">
+  {{ post.citation | markdownify }}
+</div>
 
   <p>
     {% if post.paperurl %}
