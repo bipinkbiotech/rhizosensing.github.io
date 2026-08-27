@@ -20,9 +20,9 @@ author_profile: true
 </div>
 
 
-<!-- ========================= -->
+<!-- ===================================================== -->
 <!-- Research Articles -->
-<!-- ========================= -->
+<!-- ===================================================== -->
 
 <h2>Research Articles</h2>
 
@@ -33,24 +33,18 @@ author_profile: true
 <div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
 
   <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}" target="_blank">
-        {{ post.title }}
-      </a>
-    {% else %}
-      {{ post.title }}
-    {% endif %}
+    {{ post.title }}
   </h3>
 
   <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-  <div style="margin-bottom: 0.5em;">
-  {{ post.citation | markdownify }}
-</div>
+  <div style="margin-bottom: 0.7em;">
+    {{ post.citation | markdownify }}
+  </div>
 
-  <p>
+  <p style="margin-top: 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
@@ -66,9 +60,9 @@ author_profile: true
 {% endfor %}
 
 
-<!-- ========================= -->
+<!-- ===================================================== -->
 <!-- Reviews & Perspectives -->
-<!-- ========================= -->
+<!-- ===================================================== -->
 
 <h2>Reviews &amp; Perspectives</h2>
 
@@ -79,24 +73,18 @@ author_profile: true
 <div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
 
   <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}" target="_blank">
-        {{ post.title }}
-      </a>
-    {% else %}
-      {{ post.title }}
-    {% endif %}
+    {{ post.title }}
   </h3>
 
   <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
- <div style="margin-bottom: 0.5em;">
-  {{ post.citation | markdownify }}
-</div>
+  <div style="margin-bottom: 0.7em;">
+    {{ post.citation | markdownify }}
+  </div>
 
-  <p>
+  <p style="margin-top: 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
@@ -112,9 +100,9 @@ author_profile: true
 {% endfor %}
 
 
-<!-- ========================= -->
-<!-- Books & Book Chapters -->
-<!-- ========================= -->
+<!-- ===================================================== -->
+<!-- Book Chapters / Books -->
+<!-- ===================================================== -->
 
 <h2>Book Chapters / Books</h2>
 
@@ -125,24 +113,18 @@ author_profile: true
 <div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
 
   <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}" target="_blank">
-        {{ post.title }}
-      </a>
-    {% else %}
-      {{ post.title }}
-    {% endif %}
+    {{ post.title }}
   </h3>
 
   <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
- <div style="margin-bottom: 0.5em;">
-  {{ post.citation | markdownify }}
-</div>
+  <div style="margin-bottom: 0.7em;">
+    {{ post.citation | markdownify }}
+  </div>
 
-  <p>
+  <p style="margin-top: 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
@@ -158,9 +140,9 @@ author_profile: true
 {% endfor %}
 
 
-<!-- ========================= -->
+<!-- ===================================================== -->
 <!-- Conference Papers -->
-<!-- ========================= -->
+<!-- ===================================================== -->
 
 <h2>Conference Papers</h2>
 
@@ -171,24 +153,18 @@ author_profile: true
 <div style="margin-bottom: 2em; padding-bottom: 1.2em; border-bottom: 1px solid #ddd;">
 
   <h3 style="margin-bottom: 0.35em; line-height: 1.35;">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}" target="_blank">
-        {{ post.title }}
-      </a>
-    {% else %}
-      {{ post.title }}
-    {% endif %}
+    {{ post.title }}
   </h3>
 
   <div style="margin-bottom: 0.5em;">
     <em>{{ post.venue }}</em> · {{ post.date | date: "%Y" }}
   </div>
 
-<div style="margin-bottom: 0.5em;">
-  {{ post.citation | markdownify }}
-</div>
+  <div style="margin-bottom: 0.7em;">
+    {{ post.citation | markdownify }}
+  </div>
 
-  <p>
+  <p style="margin-top: 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank">[DOI]</a>
     {% endif %}
